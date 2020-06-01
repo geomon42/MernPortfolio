@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.aboutme {
+  height: 1050px;
+}
+.about-right {
+  float: right;
+  width: 73%;
+  margin-right: 10px;
+  text-align: center;
+  height: 100%;
+}
+.about-first {
+  box-shadow: 2px 2px 2px 3px rgb(9, 11, 161);
+  width: 24%;
+  height: 1000px;
+  float: left;
+}
+.about-third img {
+  height: 30%;
+  width: 40%;
+  padding-right: 20px;
+  border-radius: 10%;
+}
+.about-third p {
+  color: rgb(92, 93, 94);
+}
+
+.about-first ul li {
+  display: inline-block;
+  font-size: 30px;
+  width: 50px;
+  padding: 20px;
+  margin-top: 10px;
+}
+.about-first a {
+  margin-left: 15px;
+}
+.about-first img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin-left: 85px;
+  margin-top: 20px;
+}
+
+/* rating t2
+*/
+.rating-2 {
+  height: 35px;
+}
+.rating-2 h3 {
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.rating-2 .stars {
+  float: right;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+.rating-2 span {
+  margin-left: 18px;
+}
+.rating-list h2 {
+  text-align: center;
+}
+
+/* stars rate */
+
+.checked {
+  color: orange;
+}
+
+.rating-1 h3 {
+  font-family: "Shadows Into Light", cursive;
+}
+.rating-2 h3 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.email-me {
+  font-size: 25px;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  width: 15%;
+  background-color: rgb(9, 11, 161);
+  margin-left: 45%;
+  margin-top: 5%;
+  color: white;
+}
+.email-me:hover {
+  background-color: rgb(27, 27, 27);
+  border: rgb(9, 11, 161) 3px solid;
+  font-size: 150%;
+}

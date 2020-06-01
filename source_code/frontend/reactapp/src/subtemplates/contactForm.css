@@ -1,0 +1,107 @@
+.mail-container {
+  background: rgb(27, 27, 27);
+  margin: 100px auto;
+  width: 80%;
+  box-shadow: 1px 1px 4px 1px lightgray;
+}
+
+.mail-container form {
+  width: 100%;
+  padding: 100px;
+}
+
+.mail-container label {
+  display: block;
+  letter-spacing: 0.3rem;
+  font-style: italic;
+  color: rgb(92, 93, 94);
+  margin-left: 25%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.mail-container input {
+  width: 30%;
+  padding: 10px;
+  margin-left: 25%;
+}
+.mail-container textarea {
+  width: 60%;
+  padding: 60px;
+  border: none;
+  margin-left: 25px;
+  box-shadow: 1px 1px 4px 1px rgb(109, 26, 26);
+}
+
+.mail-container input:focus,
+.mail-container textarea:focus {
+  box-shadow: 1px 1px 4px rgb(49, 170, 240);
+}
+.btn {
+  margin-top: 30px;
+  margin-left: 35%;
+}
+.button {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: rgb(9, 11, 161);
+  border-radius: 50px;
+}
+.button:hover {
+  background-color: rgb(27, 27, 27);
+  border: rgb(9, 11, 161) 3px solid;
+  cursor: pointer;
+}
+.msg {
+  margin-left: 30%;
+  margin-top: 20px;
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+  color: green;
+  display: none;
+}
+.msgAppear {
+  display: block;
+}
+
+.contactme {
+  text-align: center;
+  width: 80%;
+  margin-top: 60px;
+  margin-left: 10%;
+}
+.contactme h3 {
+  font-size: 40px;
+  color: rgb(92, 93, 94);
+}
+.contactme h1 {
+  font-size: 50px;
+}
+.status {
+  border: rgb(9, 11, 161) 3px solid;
+  width: 45%;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+.status h2 {
+  color: green;
+}
+
+.singleform {
+  margin: 30px 0;
+}
+
+@media screen and (nin-width: 664px) {
+  .mail-container {
+    width: 40%;
+  }
+}
+@media screen and (nin-width: 986px) {
+  .mail-container {
+    width: 40%;
+  }
+}
