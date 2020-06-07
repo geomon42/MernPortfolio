@@ -1,17 +1,18 @@
 import React from "react";
+import GetIntouch from "../main_template/GetIntouch";
 import NavBar from "../main_template/NavBar";
-import ServicesForm from "./ServicesForm";
-import ContactForm from "./ContactForm";
 import Footer from "../main_template/Footer";
+import Subabout from "./Subabout";
 
-function Services() {
+function About() {
   return (
     <div>
       <NavBar />
-      <ServicesForm />
+      <Subabout />
+      <GetIntouch />
       <Footer />
     </div>
   );
 }
 
-export default Services;
+export default About;

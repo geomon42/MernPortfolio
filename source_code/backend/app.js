@@ -45,7 +45,7 @@ const blogRoutes = require("./api/routes/blog");
 
 app.use("/api/blog", blogRoutes);
 // send email
-app.post("/api/email", (req, res) => {
+app.post("/email", (req, res) => {
   let data = req.body;
   let smtpTransport = nodemailer.createTransport({
     service: "Gmail",

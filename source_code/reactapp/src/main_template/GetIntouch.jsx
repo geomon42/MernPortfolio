@@ -9,7 +9,7 @@ function GetIntouch() {
           <h2>Let's Work Together</h2>
           <p>Have a project you'd like to discuss?</p>
           <div className="get-link">
-            <Link to="/services">
+            <Link to="/contact">
               <h3>Get in Touch</h3>
             </Link>
           </div>

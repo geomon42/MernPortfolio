@@ -1,0 +1,44 @@
+#services-header h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+}
+#services-header p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+#services-header {
+  height: 600px;
+}
+
+.services-list-container .services-row {
+  width: 27%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+  border: 2px solid blue;
+}
+.services-list-container .services-row p {
+  margin-top: -0px;
+  color: rgb(92, 93, 94);
+}
+.services-list-container .services-row-2 {
+  width: 27%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+  border: 2px solid blue;
+}
+.services-list-container .services-row-2 p {
+  margin-top: -0px;
+  color: rgb(92, 93, 94);
+}

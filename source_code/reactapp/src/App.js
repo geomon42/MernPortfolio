@@ -11,6 +11,7 @@ import Contact from "./subtemplates/Contact";
 import ServicesForm from "./subtemplates/ServicesForm";
 import "./App.css";
 import GetIntouch from "./main_template/GetIntouch";
+import Counter from "./subtemplates/Counter";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
 const Home = () => (
   <div>
     <NavBar />
+    <Counter />
     <MainContent />
     <ServicesForm />
     <GetIntouch />

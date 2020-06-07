@@ -33,11 +33,6 @@ function NavBar() {
                 <h2>Contact</h2>
               </Link>
             </li>
-            <li>
-              <Link className="cool-link" to="/blog">
-                <h2>Blog</h2>
-              </Link>
-            </li>
           </ul>
         </nav>
       </header>

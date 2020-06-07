@@ -37,9 +37,6 @@ function ServicesForm() {
             possible.
           </p>
         </div>
-        <div className="services-link">
-          <a href="services">View All Services</a>
-        </div>
       </div>
     </section>
   );

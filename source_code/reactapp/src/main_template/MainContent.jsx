@@ -83,9 +83,13 @@ function MainContent() {
               <cite className="first-cite">
                 <img src={cora} alt="Corazon Kalinga"></img>
                 <h6>Corazon Kalinga</h6>
-                <p>
+                <p className="company">
                   Owner of
-                  <a href="https://www.quickflo.com.ph/" rel="noopener">
+                  <a
+                    href="https://www.quickflo.com.ph/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     Quickflo Forwarders Inc.
                   </a>
                 </p>

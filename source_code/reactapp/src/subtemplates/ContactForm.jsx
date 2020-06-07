@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./contactForm.css";
+import swal from "sweetalert";
+
+const successMessage = swal({
+  title: "Email has been sent!",
+  text: "I`ll get back within 1-2 days.",
+  icon: "success",
+});
 
 export default class ContactForm extends Component {
   state = {
     name: "",
     email: "",
     message: "",
+    alert: "Message is Sent",
     sent: false,
   };
 
@@ -32,7 +40,7 @@ export default class ContactForm extends Component {
   //end of handle inputs
 
   formSubmit = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
 
     let data = {
       name: this.state.name,
@@ -41,7 +49,7 @@ export default class ContactForm extends Component {
     };
 
     axios
-      .post("/api/email", data)
+      .post("http://localhost:3000/email", data)
       .then((res) => {
         this.setState(
           {
@@ -66,7 +74,7 @@ export default class ContactForm extends Component {
       this.setState({
         sent: false,
       });
-    }, 3000);
+    }, 30);
   };
 
   render() {
@@ -123,13 +131,14 @@ export default class ContactForm extends Component {
                 placeholder="Your Message.."
                 value={this.state.message}
                 onChange={this.handleMessage}
+                required
               ></textarea>
             </div>
             <div className={this.state.sent ? "msg msgAppear" : "msg"}>
               Email has been sent !
             </div>
             <div className="btn">
-              <button type="submit" className="button">
+              <button type="submit" className="button" onClick={successMessage}>
                 Submit
               </button>
             </div>

@@ -18,22 +18,31 @@ function Subabout() {
               <a
                 href="https://www.facebook.com/Jericfelicilda"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fa fa-facebook"
-              ></a>
+              >
+                .
+              </a>
             </li>
             <li>
               <a
                 href="https://twitter.com/home"
                 className="fa fa-twitter"
                 target="_blank"
-              ></a>
+                rel="noopener noreferrer"
+              >
+                .
+              </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/jeric-dela-cruz-597420166/"
                 className="fa fa-linkedin"
                 target="_blank"
-              ></a>
+                rel="noopener noreferrer"
+              >
+                .
+              </a>
             </li>
           </ul>
         </div>
@@ -209,8 +218,8 @@ function Subabout() {
               building my own products.
             </p>
             <picture>
-              <img src={family} />
-              <img src={rr} />
+              <img src={family} alt="family" />
+              <img src={rr} alt="babyrr" />
             </picture>
           </div>
           <div>
