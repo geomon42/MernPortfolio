@@ -3,12 +3,6 @@ import axios from "axios";
 import "./contactForm.css";
 import swal from "sweetalert";
 
-const successMessage = swal({
-  title: "Email has been sent!",
-  text: "I`ll get back within 1-2 days.",
-  icon: "success",
-});
-
 export default class ContactForm extends Component {
   state = {
     name: "",
@@ -40,7 +34,12 @@ export default class ContactForm extends Component {
   //end of handle inputs
 
   formSubmit = (e) => {
-    //e.preventDefault();
+    swal({
+      title: "Email has been sent!",
+      text: "I`ll get back within 1-2 days.",
+      icon: "success",
+    });
+    e.preventDefault();
 
     let data = {
       name: this.state.name,
@@ -138,7 +137,7 @@ export default class ContactForm extends Component {
               Email has been sent !
             </div>
             <div className="btn">
-              <button type="submit" className="button" onClick={successMessage}>
+              <button type="submit" className="button">
                 Submit
               </button>
             </div>

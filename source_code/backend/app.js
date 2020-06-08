@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 // for email sending
 const cors = require("cors"); // for email sending
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 require("dotenv/config");
 
@@ -101,10 +102,18 @@ app.use((error, req, res, next) => {
 
 //Connect to DB
 mongoose.connect(
-  process.env.DB_CONNECTION,
+  process.env.MONGODB_URI || process.env.DB_CONNECTION,
   { useNewUrlParser: true, useUnifiedTopology: true },
   console.log("connected to DB")
 );
 mongoose.set("useCreateIndex", true);
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("reactapp/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "reactapp", "build", "index.html"));
+  });
+}
 
 module.exports = app;

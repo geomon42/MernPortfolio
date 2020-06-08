@@ -28,6 +28,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "heroku-postbuild": "cd reactapp && npm install && npm run build",
     "server": "nodemon server.js",
     "reactapp": "npm start --prefix ../reactapp",
     "dev": "concurrently \"npm run server\" \"npm run reactapp\""
